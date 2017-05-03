@@ -8,3 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bootstrap.unity
     guid: 5539cfa63113d3542ad5d0f1262cd41c
+  - enabled: 1
+    path: Assets/Scenes/L1HumanWorld.unity
+    guid: e3c6f927623bf6847ad34d518ad4fe76
+  - enabled: 1
+    path: Assets/Scenes/L1SpiritWorld.unity
+    guid: 63e69dc316635a64398bce4fbc063aa7

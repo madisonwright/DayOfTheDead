@@ -76,9 +76,42 @@ public class EventMessenger : PersistentSingleton<EventMessenger> {
 
     public static void TriggerEvent(string eventName) {
         if(CheckEvent(eventName)) {
-            Action handlers = eventHandlers[eventName] as Action;
+            var handlers = eventHandlers[eventName] as Action;
             if (handlers != null) {
                 handlers();
+            } else {
+                PrintError(string.Format("Mismatch in event handler and trigger signatures for event {0}", eventName));
+            }
+        }
+    }
+
+    public static void TriggerEvent<T>(string eventName, T eventArg1) {
+        if (CheckEvent(eventName)) {
+            var handlers = eventHandlers[eventName] as Action<T>;
+            if (handlers != null) {
+                handlers(eventArg1);
+            } else {
+                PrintError(string.Format("Mismatch in event handler and trigger signatures for event {0}", eventName));
+            }
+        }
+    }
+
+    public static void TriggerEvent<T, U>(string eventName, T eventArg1, U eventArg2) {
+        if (CheckEvent(eventName)) {
+            var handlers = eventHandlers[eventName] as Action<T, U>;
+            if (handlers != null) {
+                handlers(eventArg1, eventArg2);
+            } else {
+                PrintError(string.Format("Mismatch in event handler and trigger signatures for event {0}", eventName));
+            }
+        }
+    }
+
+    public static void TriggerEvent<T, U, V>(string eventName, T eventArg1, U eventArg2, V eventArg3) {
+        if (CheckEvent(eventName)) {
+            var handlers = eventHandlers[eventName] as Action<T, U, V>;
+            if (handlers != null) {
+                handlers(eventArg1, eventArg2, eventArg3);
             } else {
                 PrintError(string.Format("Mismatch in event handler and trigger signatures for event {0}", eventName));
             }
@@ -109,12 +142,9 @@ public class EventMessenger : PersistentSingleton<EventMessenger> {
 
 
     private static bool CheckEvent(string eventName) {
-        if(!eventHandlers.ContainsKey(eventName)) {
-            PrintError(string.Format("No handlers found for event {0}", eventName));
-            return false;
-        }
-        return true;
+        return eventHandlers.ContainsKey(eventName);
     }
+
     private static void Cleanup() {
         foreach (var entry in eventHandlers.Where(kv => kv.Value == null).ToList()) {
             eventHandlers.Remove(entry.Key);
