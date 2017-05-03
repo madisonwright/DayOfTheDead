@@ -5,6 +5,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Inspired from - https://unity3d.com/learn/tutorials/topics/scripting/events-creating-simple-messaging-system and
+ * http://wiki.unity3d.com/index.php?title=Advanced_CSharp_Messenger
+ */
+
 public class EventMessenger : PersistentSingleton<EventMessenger> {
     private static Dictionary<string, Delegate> eventHandlers = new Dictionary<string, Delegate>();
 
