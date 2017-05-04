@@ -19,6 +19,5 @@ public class EnemyMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		nav.SetDestination (player.position);
-		Debug.Log("hello");
 	}
 }
