@@ -9,7 +9,7 @@ public class PlayerAttack : MonoBehaviour
 
 
 	//Animator anim;
-	GameObject player;
+	GameObject enemy;
 	//PlayerHealth playerHealth;
 	EnemyHealth enemyHealth;
 	bool enemyInRange;
@@ -18,9 +18,9 @@ public class PlayerAttack : MonoBehaviour
 
 	void Awake ()
 	{
-		player = GameObject.FindGameObjectWithTag ("Player");
+		enemy = GameObject.FindGameObjectWithTag ("Enemy");
 		//playerHealth = player.GetComponent <PlayerHealth> ();
-		enemyHealth = GetComponent<EnemyHealth>();
+		enemyHealth = enemy.GetComponent<EnemyHealth>();
 		//anim = GetComponent <Animator> ();
 	}
 
