@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 1387369098257936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.95, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 4663465703379022}
   - {fileID: 4819762865141338}
@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d338a1404f5ef48abe2610e6fecd9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 18
 --- !u!114 &114465813682826068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -399,6 +399,7 @@ MonoBehaviour:
   deathClip: {fileID: 8300000, guid: d07f6bb32dfec4d26a3d11281dcacd9e, type: 3}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.1}
+  health: {fileID: 0}
 --- !u!114 &114856890372909746
 MonoBehaviour:
   m_ObjectHideFlags: 1

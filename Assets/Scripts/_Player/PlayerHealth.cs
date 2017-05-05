@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
 	public AudioClip deathClip;
 	public float flashSpeed = 5f;
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+	public Text health;
 
 
 	//Animator anim;
@@ -22,6 +23,9 @@ public class PlayerHealth : MonoBehaviour
 	bool isDead;
 	//bool damaged;
 
+	void Start(){
+		health.text = "Health: 100";
+	}
 
 	void Awake ()
 	{
@@ -55,6 +59,7 @@ public class PlayerHealth : MonoBehaviour
 		//damaged = true;
 
 		currentHealth -= amount;
+		health.text = "Health: " + currentHealth.ToString();
 
 		//healthSlider.value = currentHealth;
 
