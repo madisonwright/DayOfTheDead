@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e8053e2efaa540641a6341b055145f5d
+timeCreated: 1493944954
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: TangoMacabre
+  fontNames:
+  - TangoMacabre
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

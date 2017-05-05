@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5830bcd22a51e1c4f85c2f2742ddc981
+timeCreated: 1493945282
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Chicago by Benj Funk
+  fontNames:
+  - Chicago by Benj Funk
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 20ee2991fc8ec174a8cfa6fb778f6295
+timeCreated: 1493945281
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Dia de los Muertos Limited Free Version
+  fontNames:
+  - Dia de los Muertos Limited Free Version
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
