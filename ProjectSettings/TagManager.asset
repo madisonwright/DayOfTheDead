@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - SpiritEnergy
+  - PlayerEnemyDetector
+  - PlayerPickupDetector
   layers:
   - Default
   - TransparentFX

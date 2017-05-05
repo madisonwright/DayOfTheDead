@@ -1,67 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
-{
-	public float timeBetweenAttacks = 0.5f;
-	public int attackDamage = 20;
+public class PlayerAttack : MonoBehaviour {
+    public float timeBetweenAttacks = 0.5f;
+    public int attackDamage = 20;
 
+    EnemyHealth enemyHealth;
+    bool enemyInRange;
+    float timer;
 
-	//Animator anim;
-	GameObject enemy;
-	//PlayerHealth playerHealth;
-	EnemyHealth enemyHealth;
-	bool enemyInRange;
-	float timer;
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Enemy") {
+            enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+            enemyInRange = true;
+        }
+    }
 
-
-	void Awake ()
-	{
-		enemy = GameObject.FindGameObjectWithTag ("Enemy");
-		//playerHealth = player.GetComponent <PlayerHealth> ();
-		enemyHealth = enemy.GetComponent<EnemyHealth>();
-		//anim = GetComponent <Animator> ();
-	}
+    private void OnTriggerExit(Collider other) {
+        if (other.gameObject.tag == "Enemy") {
+            enemyInRange = false;
+            enemyHealth = null;
+        }
+    }
 
 
-	void OnTriggerEnter (Collider other)
-	{
-		if(other.gameObject.tag == "Enemy")
-		{
-			enemyInRange = true;
-		}
-	}
+    private void Update() {
+        timer += Time.deltaTime;
+        if (timer >= timeBetweenAttacks && enemyInRange) {
+            Attack();
+        }
+    }
 
+    void Attack() {
+        timer = 0f;
 
-	void OnTriggerExit (Collider other)
-	{
-		if(other.gameObject.tag == "Enemy")
-		{
-			enemyInRange = false;
-		}
-	}
-
-
-	void Update ()
-	{
-		timer += Time.deltaTime;
-
-		if(timer >= timeBetweenAttacks && enemyInRange/* && enemyHealth.currentHealth > 0*/)
-		{
-			Attack ();
-		}
-			
-	}
-
-
-	void Attack ()
-	{
-		timer = 0f;
-
-		if(enemyHealth.currentHealth > 0)
-		{
-			enemyHealth.TakeDamage (attackDamage);
-		}
-	}
+        if (enemyHealth.currentHealth > 0) {
+            enemyHealth.TakeDamage(attackDamage);
+        }
+    }
 }
