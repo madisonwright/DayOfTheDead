@@ -25,7 +25,6 @@ public class SpawnPoint : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "PlayerEnemyDetector") {
             if (timer >= 5.0) {
-                print (timer);
                 num_enemy = 0;
                 InvokeRepeating ("Spawn", spawnTime, spawnTime);
             }
@@ -46,7 +45,6 @@ public class SpawnPoint : MonoBehaviour
         //{
         //  return;
         //}
-        print(num_enemy);
         if (num_enemy >= 4){
             return;
         }
