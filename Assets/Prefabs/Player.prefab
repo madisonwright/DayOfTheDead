@@ -148,8 +148,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387369098257936}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7047688, z: 0, w: 0.70943713}
+  m_LocalPosition: {x: 40.515648, y: 3, z: 32.869602}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4663465703379022}
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
-  currentHealth: 0
+  currentHealth: 100
   damageImage: {fileID: 0}
   deathClip: {fileID: 8300000, guid: d07f6bb32dfec4d26a3d11281dcacd9e, type: 3}
   flashSpeed: 5
