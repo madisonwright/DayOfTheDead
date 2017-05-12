@@ -17,8 +17,10 @@ public class PlayerMovementController : MonoBehaviour {
 
         var newPosition = transform.position;
 		newPosition += new Vector3(horizontal, 0.0f, vertical).normalized * speed * Time.deltaTime;
-		newPosition.x = Mathf.Clamp (newPosition.x, -50.0f, 50.0f);
-		newPosition.z = Mathf.Clamp (newPosition.z, -50.0f, 50.0f);
+		//newPosition.x = Mathf.Clamp (newPosition.x, -50.0f, 50.0f);
+		//newPosition.z = Mathf.Clamp (newPosition.z, -50.0f, 50.0f);
+        //newPosition.y = Mathf.Clamp (newPosition.y, 0.0f, 0.0f);
+
 		transform.position = newPosition;
 
         Turn();
