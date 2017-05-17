@@ -11,10 +11,9 @@ public class RandomPos : MonoBehaviour {
 	 
 	 void Start()
 	 {
-	     x = Random.Range(-45, 45);
-	     y = 1;
-	     z = Random.Range(-45, 45);
-	     pos = new Vector3(x, y, z);
+	     x = Random.Range(-2, 2);
+	     z = Random.Range(-2, 2);
+	     pos = new Vector3(transform.position.x + x, transform.position.y-2, transform.position.z + z);
 	     transform.position = pos;
 	 }
 }

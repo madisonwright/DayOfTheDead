@@ -8,6 +8,8 @@ public class EnemyHealth : MonoBehaviour
 	public int currentHealth;
 	public float sinkSpeed = 2.5f;
 	public AudioClip deathClip;
+	public Transform PickupSpiritEnergy;
+	private float x;
 
     GameObject player;
 	Animator anim;
@@ -22,7 +24,7 @@ public class EnemyHealth : MonoBehaviour
 	{
 		anim = GetComponent <Animator> ();
 		enemyAudio = GetComponent <AudioSource> ();
-		//hitParticles = GetComponentInChildren <ParticleSystem> ();
+		hitParticles = GetComponentInChildren <ParticleSystem> ();
 		capsuleCollider = GetComponent <BoxCollider> ();
         player = GameObject.FindGameObjectWithTag ("Player");
 		currentHealth = startingHealth;
@@ -47,13 +49,13 @@ public class EnemyHealth : MonoBehaviour
 
 		currentHealth -= amount;
         gameObject.transform.LookAt (player.transform.position);
-        gameObject.transform.position += (gameObject.transform.position - player.transform.position) / 8.0F;
+        gameObject.transform.position += (gameObject.transform.position - player.transform.position) / 4.0F;
 
 		//hitParticles.transform.position = hitPoint;
-		//hitParticles.Play();
 
 		if(currentHealth <= 0)
 		{
+			hitParticles.Play();
 			Death ();
 		}
 	}
@@ -69,6 +71,11 @@ public class EnemyHealth : MonoBehaviour
 
 		enemyAudio.clip = deathClip;
 		enemyAudio.Play ();
+		x = Random.Range(1, 3);
+		for (int i = 0; i < x; i++)
+        {
+				Instantiate(PickupSpiritEnergy, gameObject.transform.position, Quaternion.identity);
+        }
 		StartSinking ();
 	}
 

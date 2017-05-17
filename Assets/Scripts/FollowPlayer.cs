@@ -10,6 +10,9 @@ public class FollowPlayer : MonoBehaviour {
     }
 
     private void LateUpdate() {
-        transform.position = player.position + offset;
+        var newPosition = player.position + offset;
+        newPosition.x = Mathf.Clamp (newPosition.x, 25.0f, 175.0f);
+        transform.position = newPosition;
+
     }
 }
