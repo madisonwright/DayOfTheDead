@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
 	public float sinkSpeed = 2.5f;
 	public AudioClip deathClip;
 
-
+    GameObject player;
 	Animator anim;
 	AudioSource enemyAudio;
 	ParticleSystem hitParticles;
@@ -24,7 +24,7 @@ public class EnemyHealth : MonoBehaviour
 		enemyAudio = GetComponent <AudioSource> ();
 		//hitParticles = GetComponentInChildren <ParticleSystem> ();
 		capsuleCollider = GetComponent <BoxCollider> ();
-
+        player = GameObject.FindGameObjectWithTag ("Player");
 		currentHealth = startingHealth;
 	}
 
@@ -46,6 +46,8 @@ public class EnemyHealth : MonoBehaviour
 		enemyAudio.Play ();
 
 		currentHealth -= amount;
+        gameObject.transform.LookAt (player.transform.position);
+        gameObject.transform.position += (gameObject.transform.position - player.transform.position) / 8.0F;
 
 		//hitParticles.transform.position = hitPoint;
 		//hitParticles.Play();
