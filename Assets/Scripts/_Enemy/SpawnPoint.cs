@@ -8,6 +8,7 @@ public class SpawnPoint : MonoBehaviour
     public GameObject enemy;
     private float spawnTime = 0.1f;
     public Transform[] spawnPoints;
+    private int delay = 0;
 
     private int num_enemy;
     private float timer;
@@ -45,12 +46,22 @@ public class SpawnPoint : MonoBehaviour
         //{
         //  return;
         //}
-        if (num_enemy >= 4){
+        if (num_enemy >= 3){
             return;
         }
         num_enemy += 1;
         int spawnPointIndex = Random.Range (0, spawnPoints.Length);
+        if (delay == 0){
+            Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+            Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+            Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+            StartCoroutine(_Delay());
+        }
+    }
 
-        Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+    private IEnumerator _Delay() {
+            delay = 1;
+            yield return new WaitForSeconds(45f);
+            delay = 0;    
     }
 }

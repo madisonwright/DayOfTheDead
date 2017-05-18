@@ -7,13 +7,13 @@ public class EnemyHealth : MonoBehaviour
 	public int startingHealth = 100;
 	public int currentHealth;
 	public float sinkSpeed = 2.5f;
-	public AudioClip deathClip;
+	public AudioSource source;	
+	public AudioSource source2;
 	public Transform PickupSpiritEnergy;
 	private float x;
 
     GameObject player;
 	Animator anim;
-	AudioSource enemyAudio;
 	ParticleSystem hitParticles;
     BoxCollider capsuleCollider;
 	bool isDead;
@@ -23,7 +23,6 @@ public class EnemyHealth : MonoBehaviour
 	void Awake ()
 	{
 		anim = GetComponent <Animator> ();
-		enemyAudio = GetComponent <AudioSource> ();
 		hitParticles = GetComponentInChildren <ParticleSystem> ();
 		capsuleCollider = GetComponent <BoxCollider> ();
         player = GameObject.FindGameObjectWithTag ("Player");
@@ -45,8 +44,7 @@ public class EnemyHealth : MonoBehaviour
 		if(isDead)
 			return;
 
-		enemyAudio.Play ();
-
+		source.Play();
 		currentHealth -= amount;
         gameObject.transform.LookAt (player.transform.position);
         gameObject.transform.position += (gameObject.transform.position - player.transform.position) / 4.0F;
@@ -68,9 +66,7 @@ public class EnemyHealth : MonoBehaviour
 		capsuleCollider.isTrigger = true;
 
         anim.enabled = false;
-
-		enemyAudio.clip = deathClip;
-		enemyAudio.Play ();
+        source2.Play();
 		x = Random.Range(1, 3);
 		for (int i = 0; i < x; i++)
         {

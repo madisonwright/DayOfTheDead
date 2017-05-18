@@ -8,7 +8,6 @@ public class SE_count : MonoBehaviour {
 	private int count = 0;
     public Text spirit_energy;
     private AudioSource source;
-    public AudioClip chime;
 
     void Start(){
     	source = GetComponent<AudioSource>();
@@ -18,7 +17,7 @@ public class SE_count : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.CompareTag ("SpiritEnergy")) 
 		{
-			source.PlayOneShot(chime);
+			source.Play();
 			count += 1;
 			spirit_energy.text = "Spirit Energy: " + count.ToString();
 		}

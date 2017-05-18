@@ -4,6 +4,10 @@ using UnityEngine.UI;
 
 public class PlayerMovementController : MonoBehaviour {
     public float speed = 1.0f;
+    public AudioSource source3;
+    public AudioSource source4;
+    private float x;
+
 
     private Animator animator;
 
@@ -27,6 +31,12 @@ public class PlayerMovementController : MonoBehaviour {
 
         if(Input.GetMouseButton(0)) {
             animator.SetTrigger("Attacking");
+            x = Random.Range(0, 2);
+            if (x < 1){
+                source3.Play();
+            } else{
+                source4.Play();
+            }
         }
     }
 
@@ -34,6 +44,7 @@ public class PlayerMovementController : MonoBehaviour {
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit mouseHit;
         if (Physics.Raycast(camRay, out mouseHit)) {
+
             Vector3 playerToMouse = mouseHit.point - transform.position;
             playerToMouse.y = 0f;
             Quaternion newRotatation = Quaternion.LookRotation(playerToMouse);
