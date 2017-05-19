@@ -36,11 +36,15 @@ public class WorldSwitchEffect : PersistentSingleton<WorldSwitchEffect> {
 
             if(t > switchPoint && !switched) {
                 EventMessenger.TriggerEvent(Events.WORLD_SWITCH_POINT);
+                switched = true;
             }
 
             yield return null;
         }
 
+        if(!switched) {
+            EventMessenger.TriggerEvent(Events.WORLD_SWITCH_POINT);
+        }
         Time.timeScale = 1.0f;
         ResetProfile();
         Running = false;
