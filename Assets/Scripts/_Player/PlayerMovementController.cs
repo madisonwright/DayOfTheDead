@@ -52,7 +52,7 @@ public class PlayerMovementController : MonoBehaviour {
 		//transform.position = newPosition;
 
         Turn();
-        if (Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.F)){
             if (rb.transform.position.y <= 5){
                 rb.AddForce(0,jumpHeight,0);    
             }

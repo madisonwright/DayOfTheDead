@@ -99,6 +99,7 @@ public class PlayerHealth : MonoBehaviour
 			source3.Play();
 			currentHealth += 20;
 			other.gameObject.SetActive(false);
+			health.text = "Health: " + currentHealth.ToString();
 		}
 	}
 
