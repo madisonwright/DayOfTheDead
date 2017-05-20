@@ -10,8 +10,8 @@ public class EnemyMovement : MonoBehaviour {
     PlayerHealth playerHealth;
     EnemyHealth enemyHealth;
     NavMeshAgent nav;
-    float ran_x;
-    float ran_z;
+    public float ran_x;
+    public float ran_z;
 
     // Use this for initialization
     void Awake () {
@@ -19,14 +19,14 @@ public class EnemyMovement : MonoBehaviour {
         playerHealth = player.GetComponent <PlayerHealth> ();
         enemyHealth = GetComponent <EnemyHealth> ();
         nav = GetComponent <NavMeshAgent> ();
-        ran_x = Random.Range (-5.0f, 5.0f);
-        ran_z = Random.Range (-5.0f, 5.0f);
+        ran_x = Random.Range (-2.0f, 2.0f);
+        ran_z = Random.Range (-2.0f, 2.0f);
     }
 
     // Update is called once per frame
     void Update () {
         if (playerHealth.currentHealth > 0 && enemyHealth.currentHealth > 0) {
-            if ((gameObject.transform.position - player.position).sqrMagnitude <= 100) {
+            if ((gameObject.transform.position - player.position).sqrMagnitude <= ((ran_x * ran_x) + (ran_z * ran_z)) + 1) {
                 nav.SetDestination (player.position);
             } else {
                 float x = player.position.x;
