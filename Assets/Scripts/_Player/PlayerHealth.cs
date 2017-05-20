@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
 	public Image damageImage;
 	public AudioSource source;
 	public AudioSource source2;
+	public AudioSource source3;
 	public float flashSpeed = 5f;
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 	public Text health;
@@ -91,4 +92,14 @@ public class PlayerHealth : MonoBehaviour
 	{
 		SceneManager.LoadScene (0);
 	}
+
+	void OnTriggerEnter(Collider other){
+		if (other.gameObject.CompareTag ("Health")) 
+		{
+			source3.Play();
+			currentHealth += 20;
+			other.gameObject.SetActive(false);
+		}
+	}
+
 }

@@ -10,6 +10,7 @@ TagManager:
   - PlayerPickupDetector
   - TextDetector
   - Collection
+  - Health
   layers:
   - Default
   - TransparentFX
