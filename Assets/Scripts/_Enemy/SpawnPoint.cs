@@ -51,10 +51,13 @@ public class SpawnPoint : MonoBehaviour
         }
         num_enemy += 1;
         int spawnPointIndex = Random.Range (0, spawnPoints.Length);
+        Vector3 spawn1 = new Vector3 (gameObject.transform.position.x + 10, 1, gameObject.transform.position.z + 10); 
+        Vector3 spawn2 = new Vector3 (gameObject.transform.position.x - 10, 1, gameObject.transform.position.z - 10); 
+        Vector3 spawn3 = new Vector3 (gameObject.transform.position.x - 10, 1, gameObject.transform.position.z + 10); 
         if (delay == 0){
-            Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-            Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
-            Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
+            Instantiate (enemy, spawn1, spawnPoints[spawnPointIndex].rotation);
+            Instantiate (enemy, spawn2, spawnPoints[spawnPointIndex].rotation);
+            Instantiate (enemy, spawn3, spawnPoints[spawnPointIndex].rotation);
             StartCoroutine(_Delay());
         }
     }
