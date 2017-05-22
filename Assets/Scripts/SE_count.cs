@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SE_count : MonoBehaviour {
 
 	private int count = 0;
-	private int count2 = 0;
+	public int count2 = 0;
     public Text spirit_energy;
     public Text collection_energy;
     private AudioSource source;

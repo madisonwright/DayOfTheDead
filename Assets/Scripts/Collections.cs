@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Collections : MonoBehaviour {
 
-	private int count;
-	private AudioSource source5;
+	public int count;
 
 
 	void OnTriggerEnter(Collider other){
-		if (other.gameObject.CompareTag ("Colletion")) 
+		if (other.gameObject.CompareTag ("PlayerPickupDetector")) 
 		{
-			source5.Play();
-			count += 1;
+			if (other.gameObject.GetComponent<SE_count>().count2 == count){
+				gameObject.SetActive(false);
+			}
 		}
 	}
 	

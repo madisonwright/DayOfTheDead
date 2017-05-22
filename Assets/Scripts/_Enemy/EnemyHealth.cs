@@ -67,7 +67,7 @@ public class EnemyHealth : MonoBehaviour
 
         anim.enabled = false;
         source2.Play();
-		x = Random.Range(1, 3);
+		x = Random.Range(1, 4);
 		for (int i = 0; i < x; i++)
         {
 				Instantiate(PickupSpiritEnergy, gameObject.transform.position, Quaternion.identity);
