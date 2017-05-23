@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : PersistentSingleton<LevelManager> {
     public LevelInfo[] levels;
+    public WorldType currentWorld;
 
     private LevelInfo currentLevel;
     private Dictionary<WorldType, WorldController> currentWorlds = new Dictionary<WorldType, WorldController>();
-    private WorldType currentWorld;
+
 
     protected override void Awake() {
         base.Awake();
