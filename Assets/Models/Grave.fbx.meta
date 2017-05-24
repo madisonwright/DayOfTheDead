@@ -1,0 +1,237 @@
+fileFormatVersion: 2
+guid: 2fe0fb30c0fa747f793e58d3f5a7d323
+timeCreated: 1495646365
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 1
+    100002: _
+    100004: __2
+    100006: Cap_1
+    100008: Cap_1_2
+    100010: Cap_1_3
+    100012: Cap_1_4
+    100014: Cap_1_5
+    100016: Cap_2
+    100018: Cap_2_2
+    100020: Cap_2_3
+    100022: Cap_2_4
+    100024: Cap_2_5
+    100026: Cross
+    100028: Cube
+    100030: Cube_1
+    100032: Dirt_Bed
+    100034: Dirt_Bed_2
+    100036: Extrude_1
+    100038: Grass
+    100040: Grass_1
+    100042: Grave
+    100044: //RootNode
+    100046: I
+    100048: I_
+    100050: MoText
+    100052: P
+    100054: P_2
+    100056: Pyramid
+    100058: Pyramid_1
+    100060: Pyramid_1_2
+    100062: Pyramid_2
+    100064: Pyramid_2_2
+    100066: Pyramid_2_3
+    100068: Pyramid_3
+    100070: Pyramid_3_2
+    100072: R
+    100074: R_
+    100076: Symmetry
+    400000: 1
+    400002: _
+    400004: __2
+    400006: Cap_1
+    400008: Cap_1_2
+    400010: Cap_1_3
+    400012: Cap_1_4
+    400014: Cap_1_5
+    400016: Cap_2
+    400018: Cap_2_2
+    400020: Cap_2_3
+    400022: Cap_2_4
+    400024: Cap_2_5
+    400026: Cross
+    400028: Cube
+    400030: Cube_1
+    400032: Dirt_Bed
+    400034: Dirt_Bed_2
+    400036: Extrude_1
+    400038: Grass
+    400040: Grass_1
+    400042: Grave
+    400044: //RootNode
+    400046: I
+    400048: I_
+    400050: MoText
+    400052: P
+    400054: P_2
+    400056: Pyramid
+    400058: Pyramid_1
+    400060: Pyramid_1_2
+    400062: Pyramid_2
+    400064: Pyramid_2_2
+    400066: Pyramid_2_3
+    400068: Pyramid_3
+    400070: Pyramid_3_2
+    400072: R
+    400074: R_
+    400076: Symmetry
+    2300000: _
+    2300002: __2
+    2300004: Cap_1
+    2300006: Cap_1_2
+    2300008: Cap_1_3
+    2300010: Cap_1_4
+    2300012: Cap_1_5
+    2300014: Cap_2
+    2300016: Cap_2_2
+    2300018: Cap_2_3
+    2300020: Cap_2_4
+    2300022: Cap_2_5
+    2300024: Cube
+    2300026: Cube_1
+    2300028: Dirt_Bed_2
+    2300030: Extrude_1
+    2300032: I
+    2300034: P_2
+    2300036: Pyramid
+    2300038: Pyramid_1
+    2300040: Pyramid_1_2
+    2300042: Pyramid_2
+    2300044: Pyramid_2_2
+    2300046: Pyramid_2_3
+    2300048: Pyramid_3
+    2300050: Pyramid_3_2
+    2300052: R
+    3300000: _
+    3300002: __2
+    3300004: Cap_1
+    3300006: Cap_1_2
+    3300008: Cap_1_3
+    3300010: Cap_1_4
+    3300012: Cap_1_5
+    3300014: Cap_2
+    3300016: Cap_2_2
+    3300018: Cap_2_3
+    3300020: Cap_2_4
+    3300022: Cap_2_5
+    3300024: Cube
+    3300026: Cube_1
+    3300028: Dirt_Bed_2
+    3300030: Extrude_1
+    3300032: I
+    3300034: P_2
+    3300036: Pyramid
+    3300038: Pyramid_1
+    3300040: Pyramid_1_2
+    3300042: Pyramid_2
+    3300044: Pyramid_2_2
+    3300046: Pyramid_2_3
+    3300048: Pyramid_3
+    3300050: Pyramid_3_2
+    3300052: R
+    4300000: R
+    4300002: Cap_1
+    4300004: Cap_2
+    4300006: _
+    4300008: Cap_1_2
+    4300010: Cap_2_2
+    4300012: I
+    4300014: Cap_1_3
+    4300016: Cap_2_3
+    4300018: __2
+    4300020: Cap_1_4
+    4300022: Cap_2_4
+    4300024: P_2
+    4300026: Cap_1_5
+    4300028: Cap_2_5
+    4300030: Dirt_Bed_2
+    4300032: Extrude_1
+    4300034: Cube_1
+    4300036: Cube
+    4300038: Pyramid_3
+    4300040: Pyramid_2
+    4300042: Pyramid_1
+    4300044: Pyramid
+    4300046: Pyramid_3_2
+    4300048: Pyramid_2_2
+    4300050: Pyramid_1_2
+    4300052: Pyramid_2_3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
