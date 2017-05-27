@@ -1,8 +1,5 @@
 ﻿using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
-using UnityEngine.UI;
 using System;
-//using System.Math;
 
 public class PlayerMovementController : MonoBehaviour {
     public float speed = 1.0f;
@@ -16,15 +13,14 @@ public class PlayerMovementController : MonoBehaviour {
     public float min_speed;
     public float reduce;
     
-
-
-
-
     private Animator animator;
+
+    private int floorMask;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        floorMask = LayerMask.GetMask("Floor");
     }
 
     void FixedUpdate () {
@@ -32,7 +28,7 @@ public class PlayerMovementController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
         movement.y = 0.0f;
 
-        if (System.Math.Abs(moveHorizontal) > 0 & System.Math.Abs(moveVertical) > 0){
+        if (Math.Abs(moveHorizontal) > 0 & Math.Abs(moveVertical) > 0){
             if (moveHorizontal >0.0f){
                 movement.x = speed/reduce;
             } else if (moveHorizontal < 0.0f){
@@ -89,19 +85,7 @@ public class PlayerMovementController : MonoBehaviour {
     }
 
     private void Update() {
-        //var horizontal = Input.GetAxis("Horizontal");
-        //var vertical = Input.GetAxis("Vertical");
-
-        //var newPosition = transform.position;
-		//newPosition += new Vector3(horizontal, 0.0f, vertical).normalized * speed * Time.deltaTime;
-		//transform.position = newPosition;
-
         Turn();
-        /*if (Input.GetKeyDown(KeyCode.F)){
-            if (rb.transform.position.y <= 5){
-                rb.AddForce(0,jumpHeight,0);    
-            }
-        }*/
         if(Input.GetMouseButton(0)) {
             animator.SetTrigger("Attacking");
             x = UnityEngine.Random.Range(0, 2);
@@ -116,8 +100,7 @@ public class PlayerMovementController : MonoBehaviour {
     private void Turn() {
         Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit mouseHit;
-        if (Physics.Raycast(camRay, out mouseHit)) {
-
+        if (Physics.Raycast(camRay, out mouseHit, 100.0f, floorMask)) {
             Vector3 playerToMouse = mouseHit.point - transform.position;
             playerToMouse.y = 0f;
             Quaternion newRotatation = Quaternion.LookRotation(playerToMouse);

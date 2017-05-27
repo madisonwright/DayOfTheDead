@@ -12,8 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/L1HumanWorld.unity
     guid: e3c6f927623bf6847ad34d518ad4fe76
   - enabled: 1
-    path: Assets/Scenes/L1SpiritWorld_old.unity
-    guid: 63e69dc316635a64398bce4fbc063aa7
-  - enabled: 1
     path: Assets/Scenes/L1SpiritWorld.unity
     guid: 3ae713a34a48190418037842d6ddb5cf
