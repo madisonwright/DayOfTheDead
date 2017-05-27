@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: StarEnemyAOC
+  m_Controller: {fileID: 9100000, guid: 64f3397ada2ec4b6b8500598863c194c, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 808ade53946ff4991b3edc15b8597fb2, type: 3}
+    m_OverrideClip: {fileID: 7400000, guid: 1763dbc019d4b44b399bd9c97885c1e2, type: 3}
