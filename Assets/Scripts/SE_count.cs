@@ -4,32 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SE_count : MonoBehaviour {
-
-	private int count = 0;
 	public int count2 = 0;
-    public Text spirit_energy;
+    public Slider spirit_energy;
     public Text collection_energy;
     private AudioSource source;
     public GameObject particles;
     ParticleSystem hitParticles;
 
-
-
-
     void Start(){
     	source = GetComponent<AudioSource>();
-    	spirit_energy.text = "Spirit Energy: 0";
     	collection_energy.text = "Collections: 0";
-
+        EventMessenger.StartListening(Events.WORLD_SWITCH_STARTED, OnWorldSwitchStarted);
     }
 
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.CompareTag ("SpiritEnergy")) 
 		{
 			source.Play();
-			count += 1;
 			particles.SetActive(true);
-			spirit_energy.text = "Spirit Energy: " + count.ToString();
+            StartCoroutine(_UpdateSlider());
 			StartCoroutine(_Hide());
 		}else if (other.gameObject.CompareTag ("Collection")){
 			source.Play();
@@ -49,5 +42,18 @@ public class SE_count : MonoBehaviour {
     private IEnumerator _reward(GameObject other) {
             yield return new WaitForSeconds(1.5f);
 			other.SetActive(false);
+    }
+
+    private IEnumerator _UpdateSlider() {
+        yield return null;
+        spirit_energy.value = SpiritEnergyManager.Instance.Energy;
+    }
+
+    private void OnWorldSwitchStarted() {
+        StartCoroutine(_UpdateSlider());
+    }
+
+    private void OnDestroy() {
+        EventMessenger.StopListening(Events.WORLD_SWITCH_STARTED, OnWorldSwitchStarted);
     }
 }
