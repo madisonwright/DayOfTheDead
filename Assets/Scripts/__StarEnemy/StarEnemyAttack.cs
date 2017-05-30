@@ -4,7 +4,7 @@ public class StarEnemyAttack : MonoBehaviour
 {
     public float timeBetweenAttacks = 0.5f;
     public int attackDamage = 10;
-    //public bool attacking = false;
+    public bool attacking = false;
 
     //Animator anim;
     GameObject player;
@@ -28,7 +28,7 @@ public class StarEnemyAttack : MonoBehaviour
         if (other.gameObject.CompareTag("PlayerEnemyDetector"))
         {
             playerInRange = true;
-            //attacking = true;
+            attacking = true;
         }
     }
 
@@ -38,7 +38,7 @@ public class StarEnemyAttack : MonoBehaviour
         if(other.gameObject.CompareTag("PlayerEnemyDetector"))
         {
             playerInRange = false;
-            //attacking = false;
+            attacking = false;
         }
     }
 
