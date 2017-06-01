@@ -22,8 +22,8 @@ public class PlayerHealth : MonoBehaviour
 	PlayerMovementController playerMovement;
 	//PlayerShooting playerShooting;
 	bool isDead;
-	//bool damaged;
-
+    //bool damaged;
+    public bool isTutorial = false;
 	void Awake ()
 	{
 		//anim = GetComponent <Animator> ();
@@ -56,7 +56,9 @@ public class PlayerHealth : MonoBehaviour
 		//damaged = true;
 
 		currentHealth -= amount;
-		healthBar.value = currentHealth;
+        if (!isTutorial) {
+            healthBar.value = currentHealth;
+        }
 
 		//healthSlider.value = currentHealth;
 
@@ -95,8 +97,10 @@ public class PlayerHealth : MonoBehaviour
 			source3.Play();
 			currentHealth += 20;
 			other.gameObject.SetActive(false);
-			healthBar.value = currentHealth;
-		}
+            if (!isTutorial) {
+                healthBar.value = currentHealth;
+            }
+        }
 	}
 
 }
