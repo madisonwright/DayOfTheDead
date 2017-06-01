@@ -6,6 +6,7 @@ public class SpawnPoint : MonoBehaviour
 {
     //public PlayerHealth playerHealth;
     public GameObject enemy;
+    public GameObject star;
     private float spawnTime = 0.1f;
     public Transform[] spawnPoints;
     private int delay = 0;
@@ -51,14 +52,43 @@ public class SpawnPoint : MonoBehaviour
         }
         num_enemy += 1;
         int spawnPointIndex = Random.Range (0, spawnPoints.Length);
+        float random = Random.Range (0.0f, 5.0f);
+
         Vector3 spawn1 = new Vector3 (gameObject.transform.position.x + 10, 1, gameObject.transform.position.z + 10); 
         Vector3 spawn2 = new Vector3 (gameObject.transform.position.x - 10, 1, gameObject.transform.position.z - 10); 
         Vector3 spawn3 = new Vector3 (gameObject.transform.position.x - 10, 1, gameObject.transform.position.z + 10); 
         if (delay == 0){
-            Instantiate (enemy, spawn1, spawnPoints[spawnPointIndex].rotation);
-            Instantiate (enemy, spawn2, spawnPoints[spawnPointIndex].rotation);
-            Instantiate (enemy, spawn3, spawnPoints[spawnPointIndex].rotation);
-            StartCoroutine(_Delay());
+            if (random > 4.0) {
+                Instantiate (enemy, spawn1, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (enemy, spawn2, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (enemy, spawn3, spawnPoints [spawnPointIndex].rotation);
+                StartCoroutine (_Delay ());
+            } else if (random > 3.0) {
+                Instantiate (star, spawn1, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (enemy, spawn2, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (enemy, spawn3, spawnPoints [spawnPointIndex].rotation);
+                StartCoroutine (_Delay ());
+            } else if (random > 2.0) {
+                Instantiate (enemy, spawn1, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (star, spawn2, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (enemy, spawn3, spawnPoints [spawnPointIndex].rotation);
+                StartCoroutine (_Delay ());
+            } else if (random > 1.0) {
+                Instantiate (enemy, spawn1, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (enemy, spawn2, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (star, spawn3, spawnPoints [spawnPointIndex].rotation);
+                StartCoroutine (_Delay ());
+            } else if (random > 0.0) {
+                Instantiate (enemy, spawn1, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (star, spawn2, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (star, spawn3, spawnPoints [spawnPointIndex].rotation);
+                StartCoroutine (_Delay ());
+            } else {
+                Instantiate (star, spawn1, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (star, spawn2, spawnPoints [spawnPointIndex].rotation);
+                Instantiate (star, spawn3, spawnPoints [spawnPointIndex].rotation);
+                StartCoroutine (_Delay ());
+            }
         }
     }
 
