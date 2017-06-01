@@ -13,7 +13,7 @@ public class SE_count : MonoBehaviour {
 
     void Start(){
     	source = GetComponent<AudioSource>();
-    	collection_energy.text = "Collections: 0";
+    	collection_energy.text = "Chillis: 0";
         EventMessenger.StartListening(Events.WORLD_SWITCH_STARTED, OnWorldSwitchStarted);
     }
 
@@ -27,7 +27,7 @@ public class SE_count : MonoBehaviour {
 		}else if (other.gameObject.CompareTag ("Collection")){
 			source.Play();
 			count2 += 1;
-			collection_energy.text = "Collections: " + count2.ToString();
+			collection_energy.text = "Chillis: " + count2.ToString();
 	    	hitParticles = other.GetComponentInChildren <ParticleSystem> ();
 			hitParticles.Play();
 			StartCoroutine(_reward(other.gameObject));

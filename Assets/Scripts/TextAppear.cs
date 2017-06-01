@@ -14,46 +14,72 @@ public class TextAppear : MonoBehaviour {
 	public Image text4;
 	public Image text5;
 	public Image text6;
-
+	private bool speak;
+	public GameObject skull;
 
 	void Start()
 	{
 		step = 1;
 		source = GetComponent<AudioSource>();
+		speak = false;
 	}
 
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.gameObject.CompareTag ("PlayerPickupDetector")) 
+		if (other.gameObject.CompareTag ("TextDetector")) 
 		{
-			source.Play();
-			if (step == 1){
-				text1.gameObject.SetActive(true);
-				step += 1;
-			} else if (step == 2){
-				text1.gameObject.SetActive(false);
-				text2.gameObject.SetActive(true);
-				step += 1;
-			} else if (step == 3){
-				text2.gameObject.SetActive(false);
-				text3.gameObject.SetActive(true);
-				step += 1;				
-			} else if (step == 4){
-				text3.gameObject.SetActive(false);
-				text4.gameObject.SetActive(true);
-				step += 1;
-			} else if (step == 5){
-				text4.gameObject.SetActive(false);
-				text5.gameObject.SetActive(true);
-				step += 1;
-			} else if (step == 6){
-				text5.gameObject.SetActive(false);
-				text6.gameObject.SetActive(true);
-				step += 1;
-			} else if (step == 7){
-				text6.gameObject.SetActive(false);
-				step = 1;
-			}
+			speak = true;
 		}
+	}
+
+	void OnTriggerExit (Collider other)
+	{
+		if(other.gameObject.CompareTag("TextDetector"))
+		{
+			speak = false;
+			skull.GetComponent<TextAppear>().text1.gameObject.SetActive(false);
+			skull.GetComponent<TextAppear>().text2.gameObject.SetActive(false);
+			skull.GetComponent<TextAppear>().text3.gameObject.SetActive(false);
+			skull.GetComponent<TextAppear>().text4.gameObject.SetActive(false);
+			skull.GetComponent<TextAppear>().text5.gameObject.SetActive(false);
+			skull.GetComponent<TextAppear>().text6.gameObject.SetActive(false);
+			step = 1;
+
+		}
+	}
+
+	void Update(){
+		if (speak == true){
+			if(Input.GetKeyDown(KeyCode.F)) {
+	        	source.Play();
+				if (step == 1){
+					skull.GetComponent<TextAppear>().text1.gameObject.SetActive(true);
+					step += 1;
+				} else if (step == 2){
+					skull.GetComponent<TextAppear>().text1.gameObject.SetActive(false);
+					skull.GetComponent<TextAppear>().text2.gameObject.SetActive(true);
+					step += 1;
+				} else if (step == 3){
+					skull.GetComponent<TextAppear>().text2.gameObject.SetActive(false);
+					skull.GetComponent<TextAppear>().text3.gameObject.SetActive(true);
+					step += 1;				
+				} else if (step == 4){
+					skull.GetComponent<TextAppear>().text3.gameObject.SetActive(false);
+					skull.GetComponent<TextAppear>().text4.gameObject.SetActive(true);
+					step += 1;
+				} else if (step == 5){
+					skull.GetComponent<TextAppear>().text4.gameObject.SetActive(false);
+					skull.GetComponent<TextAppear>().text5.gameObject.SetActive(true);
+					step += 1;
+				} else if (step == 6){
+					skull.GetComponent<TextAppear>().text5.gameObject.SetActive(false);
+					skull.GetComponent<TextAppear>().text6.gameObject.SetActive(true);
+					step += 1;
+				} else if (step == 7){
+					skull.GetComponent<TextAppear>().text6.gameObject.SetActive(false);
+					step = 1;
+				}
+	    	}
+	    }
 	}
 }
