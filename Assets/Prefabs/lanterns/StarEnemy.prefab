@@ -50,7 +50,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4144957485165786
 Transform:
   m_ObjectHideFlags: 1
@@ -165,7 +165,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1581604661522490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 1763dbc019d4b44b399bd9c97885c1e2, type: 3}
   m_Controller: {fileID: 22100000, guid: 3ae18accaed6747c9997117bf2769a1b, type: 2}
   m_CullingMode: 0

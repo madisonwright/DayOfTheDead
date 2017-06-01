@@ -16,5 +16,10 @@ public class MacheteHitDetector : MonoBehaviour {
             source.PlayOneShot(woosh);
             enemyHealth.TakeDamage(damageAmount);
         }
+        else if(other.gameObject.CompareTag("StarEnemy")) {
+            var starEnemyHealth = other.gameObject.GetComponent<StarEnemyHealth>();
+            source.PlayOneShot(woosh);
+            starEnemyHealth.TakeDamage(damageAmount);
+        }
     }
 }

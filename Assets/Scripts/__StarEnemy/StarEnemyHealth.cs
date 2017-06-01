@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StarEnemyHealth : MonoBehaviour
 {
-    public int startingHealth = 100;
+    public int startingHealth = 50;
     public int currentHealth;
     public float sinkSpeed = 2.5f;
     public AudioSource source;  
