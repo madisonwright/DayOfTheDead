@@ -1493,7 +1493,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 29.653
+      value: 27.366
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1518,6 +1518,11 @@ Prefab:
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -1884,7 +1889,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25.571
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1913,6 +1918,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -2053,7 +2063,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 26.98
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2082,6 +2092,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -2901,7 +2916,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.045
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2926,6 +2941,11 @@ Prefab:
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -3240,7 +3260,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.191
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3269,6 +3289,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -4161,7 +4186,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25.95
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4190,6 +4215,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -5416,7 +5446,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.259
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5445,6 +5475,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -5980,7 +6015,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25.716
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6005,6 +6040,11 @@ Prefab:
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -6380,7 +6420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 25.921
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6409,6 +6449,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -9251,7 +9296,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 56.8
+      value: 27.366
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9280,6 +9325,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -12976,7 +13026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 30.373
+      value: 27.366
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13005,6 +13055,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
@@ -13605,7 +13660,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 30.366
+      value: 27.366
       objectReference: {fileID: 0}
     - target: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13634,6 +13689,11 @@ Prefab:
     - target: {fileID: 1775644213558962, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
       propertyPath: m_Name
       value: PickupSpiritEnergy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 122695008875957344, guid: 3217d0c15800cce4fa4b66cec46b795f,
+        type: 2}
+      propertyPath: m_Size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3217d0c15800cce4fa4b66cec46b795f, type: 2}
