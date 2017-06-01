@@ -14,6 +14,7 @@ public class SpawnPoint : MonoBehaviour
     private int num_enemy;
     private float timer;
 
+    public bool isTutorial = false;
     void Start ()
     {
         timer = 5;
@@ -64,29 +65,36 @@ public class SpawnPoint : MonoBehaviour
                 Instantiate (enemy, spawn3, spawnPoints [spawnPointIndex].rotation);
                 StartCoroutine (_Delay ());
             } else if (random > 3.0) {
-                Instantiate (star, spawn1, spawnPoints [spawnPointIndex].rotation);
+                if(!isTutorial)
+                    Instantiate (star, spawn1, spawnPoints [spawnPointIndex].rotation);
                 Instantiate (enemy, spawn2, spawnPoints [spawnPointIndex].rotation);
                 Instantiate (enemy, spawn3, spawnPoints [spawnPointIndex].rotation);
                 StartCoroutine (_Delay ());
             } else if (random > 2.0) {
                 Instantiate (enemy, spawn1, spawnPoints [spawnPointIndex].rotation);
-                Instantiate (star, spawn2, spawnPoints [spawnPointIndex].rotation);
+                if (!isTutorial)
+                    Instantiate (star, spawn2, spawnPoints [spawnPointIndex].rotation);
                 Instantiate (enemy, spawn3, spawnPoints [spawnPointIndex].rotation);
                 StartCoroutine (_Delay ());
             } else if (random > 1.0) {
                 Instantiate (enemy, spawn1, spawnPoints [spawnPointIndex].rotation);
                 Instantiate (enemy, spawn2, spawnPoints [spawnPointIndex].rotation);
-                Instantiate (star, spawn3, spawnPoints [spawnPointIndex].rotation);
+                if (!isTutorial)
+                    Instantiate (star, spawn3, spawnPoints [spawnPointIndex].rotation);
                 StartCoroutine (_Delay ());
             } else if (random > 0.0) {
                 Instantiate (enemy, spawn1, spawnPoints [spawnPointIndex].rotation);
-                Instantiate (star, spawn2, spawnPoints [spawnPointIndex].rotation);
-                Instantiate (star, spawn3, spawnPoints [spawnPointIndex].rotation);
+                if (!isTutorial) {
+                    Instantiate(star, spawn2, spawnPoints[spawnPointIndex].rotation);
+                    Instantiate(star, spawn3, spawnPoints[spawnPointIndex].rotation);
+                }
                 StartCoroutine (_Delay ());
             } else {
-                Instantiate (star, spawn1, spawnPoints [spawnPointIndex].rotation);
-                Instantiate (star, spawn2, spawnPoints [spawnPointIndex].rotation);
-                Instantiate (star, spawn3, spawnPoints [spawnPointIndex].rotation);
+                if (!isTutorial) {
+                    Instantiate(star, spawn1, spawnPoints[spawnPointIndex].rotation);
+                    Instantiate(star, spawn2, spawnPoints[spawnPointIndex].rotation);
+                    Instantiate(star, spawn3, spawnPoints[spawnPointIndex].rotation);
+                }
                 StartCoroutine (_Delay ());
             }
         }

@@ -14,10 +14,13 @@ public class SE_count : MonoBehaviour {
     void Start(){
     	source = GetComponent<AudioSource>();
     	collection_energy.text = "Chillis: 0";
+    }
+
+    private void OnEnable() {
         EventMessenger.StartListening(Events.WORLD_SWITCH_STARTED, OnWorldSwitchStarted);
     }
 
-	void OnTriggerEnter(Collider other){
+    void OnTriggerEnter(Collider other){
 		if (other.gameObject.CompareTag ("SpiritEnergy")) 
 		{
 			source.Play();
@@ -53,7 +56,7 @@ public class SE_count : MonoBehaviour {
         StartCoroutine(_UpdateSlider());
     }
 
-    private void OnDestroy() {
+    private void OnDisable() {
         EventMessenger.StopListening(Events.WORLD_SWITCH_STARTED, OnWorldSwitchStarted);
     }
 }
