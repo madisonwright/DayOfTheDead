@@ -36,8 +36,8 @@ public class EnemyHealth : MonoBehaviour
 		{
 			transform.Translate (-Vector3.up * sinkSpeed * Time.deltaTime);
 		}
-	}
 
+	}
 
 	public void TakeDamage (int amount) //, Vector3 hitPoint)
 	{

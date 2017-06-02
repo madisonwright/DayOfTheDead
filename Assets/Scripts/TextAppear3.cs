@@ -44,7 +44,7 @@ public class TextAppear3 : MonoBehaviour {
 
 	void Update(){
 		if (speak == true){
-			if(Input.GetKeyDown(KeyCode.F)) {
+			if(Input.GetMouseButton(0)) {
 	        	source.Play();
 
 				if (step == 1){
@@ -62,7 +62,6 @@ public class TextAppear3 : MonoBehaviour {
 					skull.GetComponent<TextAppear3>().text3.gameObject.SetActive(false);
 					step = 1;
 				}
-
 	    	}
 	    }
 	}

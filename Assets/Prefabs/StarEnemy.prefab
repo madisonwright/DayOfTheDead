@@ -25,13 +25,13 @@ GameObject:
   - component: {fileID: 65497109171876544}
   - component: {fileID: 195079399226335238}
   - component: {fileID: 114048253910594372}
-  - component: {fileID: 114796785815752506}
   - component: {fileID: 114903664785736608}
   - component: {fileID: 82818167209790922}
   - component: {fileID: 82350604061983458}
+  - component: {fileID: 114804940627709822}
   m_Layer: 0
   m_Name: StarEnemy
-  m_TagString: StarEnemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1321103471831114}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.01
   m_Drag: Infinity
   m_AngularDrag: Infinity
   m_UseGravity: 1
@@ -170,7 +170,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d07f6bb32dfec4d26a3d11281dcacd9e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -250,7 +250,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 850e9badbb7b89f4c863d8244987ad7f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -349,9 +349,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
-  attackDamage: 10
+  attackDamage: 5
   attacking: 0
---- !u!114 &114796785815752506
+--- !u!114 &114804940627709822
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -359,12 +359,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1321103471831114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6286145c36a648df86321d2fb5b69af, type: 3}
+  m_Script: {fileID: 11500000, guid: 456f9f71cfd9549b2933ea42f8671c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 140
   currentHealth: 0
-  sinkSpeed: 2.5
+  sinkSpeed: 1
   source: {fileID: 82818167209790922}
   source2: {fileID: 82350604061983458}
   PickupSpiritEnergy: {fileID: 4846856857230950, guid: 3217d0c15800cce4fa4b66cec46b795f,

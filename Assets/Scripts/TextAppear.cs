@@ -50,7 +50,7 @@ public class TextAppear : MonoBehaviour {
 
 	void Update(){
 		if (speak == true){
-			if(Input.GetKeyDown(KeyCode.F)) {
+			if(Input.GetMouseButton(0)) {
 	        	source.Play();
 				if (step == 1){
 					skull.GetComponent<TextAppear>().text1.gameObject.SetActive(true);

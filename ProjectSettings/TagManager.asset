@@ -12,6 +12,7 @@ TagManager:
   - Collection
   - Health
   - StarEnemy
+  - weapon
   layers:
   - Default
   - TransparentFX

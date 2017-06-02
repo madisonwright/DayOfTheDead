@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
 	public Slider healthBar;
 
 
-	//Animator anim;
+    private Animator animator;
 	PlayerMovementController playerMovement;
 	//PlayerShooting playerShooting;
 	bool isDead;
@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
     public bool isTutorial = false;
 	void Awake ()
 	{
-		//anim = GetComponent <Animator> ();
+        animator = GetComponent<Animator>();
 		//playerAudio = GetComponent <AudioSource> ();
 		playerMovement = GetComponent <PlayerMovementController> ();
 		//playerShooting = GetComponentInChildren <PlayerShooting> ();
@@ -56,9 +56,8 @@ public class PlayerHealth : MonoBehaviour
 		//damaged = true;
 
 		currentHealth -= amount;
-        if (!isTutorial) {
-            healthBar.value = currentHealth;
-        }
+        healthBar.value = currentHealth;
+
 
 		//healthSlider.value = currentHealth;
 
@@ -77,8 +76,7 @@ public class PlayerHealth : MonoBehaviour
 
 		//playerShooting.DisableEffects ();
 
-		//anim.SetTrigger ("Die");
-
+        animator.SetTrigger("Death");
 		source2.Play ();
 
 		playerMovement.enabled = false;

@@ -7,13 +7,12 @@ public class SE_count : MonoBehaviour {
 	public int count2 = 0;
     public Slider spirit_energy;
     public Text collection_energy;
-    private AudioSource source;
+    public AudioSource source;
     public GameObject particles;
     ParticleSystem hitParticles;
 
     void Start(){
-    	source = GetComponent<AudioSource>();
-    	collection_energy.text = "Chillis: 0";
+    	collection_energy.text = "0";
     }
 
     private void OnEnable() {
@@ -30,7 +29,7 @@ public class SE_count : MonoBehaviour {
 		}else if (other.gameObject.CompareTag ("Collection")){
 			source.Play();
 			count2 += 1;
-			collection_energy.text = "Chillis: " + count2.ToString();
+			collection_energy.text = count2.ToString();
 	    	hitParticles = other.GetComponentInChildren <ParticleSystem> ();
 			hitParticles.Play();
 			StartCoroutine(_reward(other.gameObject));
