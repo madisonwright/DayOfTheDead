@@ -40,7 +40,11 @@ public class TextAppear2 : MonoBehaviour {
 
 	void Update(){
 		if (speak == true){
+<<<<<<< HEAD
 			if(Input.GetMouseButtonDown(0)) {
+=======
+			if(Input.GetKeyUp(KeyCode.F)) {
+>>>>>>> refs/remotes/origin/master
 	        	source.Play();
 
 				if (step == 1){

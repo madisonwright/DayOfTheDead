@@ -13,8 +13,15 @@ public class MacheteHitDetector : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if(other.gameObject.CompareTag("Enemy")) {
             var enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-            source.PlayOneShot(woosh);
-            enemyHealth.TakeDamage(damageAmount);
+			if (!enemyHealth) {
+				var starEnemyHealth = other.gameObject.GetComponent<StarEnemyHealth> ();
+				source.PlayOneShot (woosh);
+				starEnemyHealth.TakeDamage (damageAmount);
+
+			} else {
+				source.PlayOneShot (woosh);
+				enemyHealth.TakeDamage (damageAmount);
+			}
         }
     }
 }
