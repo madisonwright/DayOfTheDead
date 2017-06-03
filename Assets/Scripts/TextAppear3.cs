@@ -44,7 +44,7 @@ public class TextAppear3 : MonoBehaviour {
 
 	void Update(){
 		if (speak == true){
-			if(Input.GetMouseButton(0)) {
+			if(Input.GetKeyUp(KeyCode.F)) {
 	        	source.Play();
 
 				if (step == 1){
