@@ -42,9 +42,10 @@ public class TextAppear3 : MonoBehaviour {
 		}
 	}
 
+
 	void Update(){
 		if (speak == true){
-			if(Input.GetMouseButton(0)) {
+			if(Input.GetMouseButtonDown(0)) {
 	        	source.Play();
 
 				if (step == 1){

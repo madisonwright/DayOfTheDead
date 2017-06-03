@@ -86,7 +86,7 @@ public class PlayerMovementController : MonoBehaviour {
 
     private void Update() {
         Turn();
-        if(Input.GetMouseButton(0)) {
+        if(Input.GetMouseButtonDown(0)) {
             animator.SetTrigger("Attacking");
             x = UnityEngine.Random.Range(0, 2);
             if (x < 1){
