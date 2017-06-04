@@ -13,6 +13,7 @@ TagManager:
   - Health
   - StarEnemy
   - weapon
+  - TutorialHealth
   layers:
   - Default
   - TransparentFX

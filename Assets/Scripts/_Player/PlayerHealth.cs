@@ -18,6 +18,10 @@ public class PlayerHealth : MonoBehaviour
 	public Slider healthBar;
 
 
+    public Image fill;
+    private Color MaxHealthColor = Color.green;
+    private Color MinHealthColor = Color.red;
+
     private Animator animator;
 	PlayerMovementController playerMovement;
 	//PlayerShooting playerShooting;
@@ -31,11 +35,16 @@ public class PlayerHealth : MonoBehaviour
 		playerMovement = GetComponent <PlayerMovementController> ();
 		//playerShooting = GetComponentInChildren <PlayerShooting> ();
 		currentHealth = startingHealth;
+        isTutorial = false;
 	}
 
 
 	void Update ()
 	{
+        
+
+
+
 		/*
 		if(damaged)
 		{
@@ -56,8 +65,10 @@ public class PlayerHealth : MonoBehaviour
 		//damaged = true;
 
 		currentHealth -= amount;
-        healthBar.value = currentHealth;
-
+        if (!isTutorial) {
+            healthBar.value = currentHealth;
+            changeHealthBarColor ();
+        }
 
 		//healthSlider.value = currentHealth;
 
@@ -95,10 +106,19 @@ public class PlayerHealth : MonoBehaviour
 			source3.Play();
 			currentHealth += 20;
 			other.gameObject.SetActive(false);
+
             if (!isTutorial) {
                 healthBar.value = currentHealth;
+                changeHealthBarColor ();
             }
+
         }
+
 	}
+    void changeHealthBarColor(){
+        fill.color = Color.Lerp(MinHealthColor, MaxHealthColor, (float)currentHealth / 100);
+        fill.rectTransform.sizeDelta = new Vector2 (32f, 10f)* Time.deltaTime;
+
+    }
 
 }

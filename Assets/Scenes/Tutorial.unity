@@ -164,6 +164,10 @@ Prefab:
       propertyPath: randomSeed
       value: -1709295270
       objectReference: {fileID: 0}
+    - target: {fileID: 1835861445262284, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
+      propertyPath: m_TagString
+      value: Health
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114049494823944106, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
@@ -909,6 +913,10 @@ Prefab:
       propertyPath: m_Name
       value: Health (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1835861445262284, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
+      propertyPath: m_TagString
+      value: Health
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114049494823944106, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
@@ -1184,6 +1192,10 @@ Prefab:
     - target: {fileID: 1835861445262284, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
       propertyPath: m_Name
       value: Health (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1835861445262284, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
+      propertyPath: m_TagString
+      value: Health
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114049494823944106, guid: a504c5b76ca814040b561ecbc14f89c1, type: 2}
