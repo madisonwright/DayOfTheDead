@@ -21,7 +21,8 @@ public class StartOptions : MonoBehaviour {
 
 	public void LoadDelayed() {
 		showPanels.HideMenu ();
-		SceneManager.LoadScene (sceneToStart);
+		//SceneManager.LoadScene (sceneToStart);
+        LevelManager.Instance.LoadLevel(1);
 	}
 
 	public void HideDelayed() {
