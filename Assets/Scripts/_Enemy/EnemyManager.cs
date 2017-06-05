@@ -14,7 +14,7 @@ public class EnemyManager : PersistentSingleton<EnemyManager> {
 
 
     void disableEnemy(){
-        Debug.Log (LevelManager.Instance.currentWorld);
+        //Debug.Log (LevelManager.Instance.currentWorld);
 
 
         if (LevelManager.Instance.currentWorld == WorldType.Spirt) {

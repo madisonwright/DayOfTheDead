@@ -11,8 +11,14 @@ public class SE_count : MonoBehaviour {
     public GameObject particles;
     ParticleSystem hitParticles;
 
+    //GameObject player;
+    //PlayerHealth playerHealth;
+
     void Start(){
     	collection_energy.text = "0";
+        //player = GameObject.FindGameObjectWithTag ("Player");
+        //playerHealth = player.GetComponent<PlayerHealth>();
+
     }
 
     private void OnEnable() {
@@ -23,9 +29,10 @@ public class SE_count : MonoBehaviour {
 		if (other.gameObject.CompareTag ("SpiritEnergy")) 
 		{
 			source.Play();
-			particles.SetActive(true);
-            StartCoroutine(_UpdateSlider());
-			StartCoroutine(_Hide());
+            particles.SetActive (true);
+            StartCoroutine (_UpdateSlider ());
+            StartCoroutine (_Hide ());
+
 		}else if (other.gameObject.CompareTag ("Collection")){
 			source.Play();
 			count2 += 1;

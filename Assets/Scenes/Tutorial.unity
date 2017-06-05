@@ -1314,6 +1314,11 @@ Prefab:
       propertyPath: m_Drag
       value: 3.8
       objectReference: {fileID: 0}
+    - target: {fileID: 114612297034660424, guid: 3d2c98d7ea4c2be4cb4739cf7732c5cd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3d2c98d7ea4c2be4cb4739cf7732c5cd, type: 2}
   m_IsPrefabParent: 0

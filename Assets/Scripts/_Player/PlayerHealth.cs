@@ -35,7 +35,7 @@ public class PlayerHealth : MonoBehaviour
 		playerMovement = GetComponent <PlayerMovementController> ();
 		//playerShooting = GetComponentInChildren <PlayerShooting> ();
 		currentHealth = startingHealth;
-        isTutorial = false;
+        //isTutorial = false;
 	}
 
 
