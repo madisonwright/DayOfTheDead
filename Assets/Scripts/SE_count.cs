@@ -10,12 +10,13 @@ public class SE_count : MonoBehaviour {
     public AudioSource source;
     public GameObject particles;
     ParticleSystem hitParticles;
+    private int goal = 4;
 
     //GameObject player;
     //PlayerHealth playerHealth;
 
-    void Start(){
-    	collection_energy.text = "0";
+    void Awake(){
+    	collection_energy.text = "0/?";
         //player = GameObject.FindGameObjectWithTag ("Player");
         //playerHealth = player.GetComponent<PlayerHealth>();
 
@@ -36,7 +37,7 @@ public class SE_count : MonoBehaviour {
 		}else if (other.gameObject.CompareTag ("Collection")){
 			source.Play();
 			count2 += 1;
-			collection_energy.text = count2.ToString();
+			collection_energy.text = count2.ToString() + "/" + goal.ToString();
 	    	hitParticles = other.GetComponentInChildren <ParticleSystem> ();
 			hitParticles.Play();
 			StartCoroutine(_reward(other.gameObject));
@@ -49,7 +50,7 @@ public class SE_count : MonoBehaviour {
     }
 
     private IEnumerator _reward(GameObject other) {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(.5f);
 			other.SetActive(false);
     }
 
