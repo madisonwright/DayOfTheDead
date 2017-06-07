@@ -6,6 +6,7 @@ public class Levitate : MonoBehaviour {
 	public float amplitude;
 	public float velocity;
 	public float tmp;
+	public float delay;
 	public Vector3 pos;
 
 
@@ -16,7 +17,7 @@ public class Levitate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		pos.y = amplitude * Mathf.Sin (velocity * Time.time);
+		pos.y = amplitude * Mathf.Sin (velocity * (Time.time + delay));
 		transform.position += pos;
 	}
 }
