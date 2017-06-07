@@ -15,7 +15,13 @@ public class EnemyManager : PersistentSingleton<EnemyManager> {
 
     void disableEnemy(){
         //Debug.Log (LevelManager.Instance.currentWorld);
+        SpiritPickupController[] spiritEnergy = Resources.FindObjectsOfTypeAll<SpiritPickupController> ();
 
+        for (int s = 0; s < spiritEnergy.Length; s++) {
+            if (spiritEnergy [s].gameObject.name.Contains ("Clone")) {
+                Destroy(spiritEnergy [s].gameObject);
+            }
+        }
 
         if (LevelManager.Instance.currentWorld == WorldType.Spirt) {
             EnemyHealth[] ene = Resources.FindObjectsOfTypeAll<EnemyHealth>();
