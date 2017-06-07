@@ -2313,6 +2313,7 @@ MonoBehaviour:
   amplitude: 0.2
   velocity: 3
   tmp: 0
+  delay: 0
   pos: {x: 0, y: 0, z: 0}
 --- !u!1 &241013588 stripped
 GameObject:
@@ -3758,6 +3759,7 @@ MonoBehaviour:
   amplitude: 0.2
   velocity: 3
   tmp: 0
+  delay: 0
   pos: {x: 0, y: 0, z: 0}
 --- !u!1001 &397099125
 Prefab:
@@ -4969,6 +4971,7 @@ MonoBehaviour:
   amplitude: 0.2
   velocity: 3
   tmp: 0
+  delay: 0
   pos: {x: 0, y: 0, z: 0}
 --- !u!1 &595150663 stripped
 GameObject:
@@ -14743,6 +14746,7 @@ MonoBehaviour:
   amplitude: 0.2
   velocity: 3
   tmp: 0
+  delay: 0
   pos: {x: 0, y: 0, z: 0}
 --- !u!4 &1592606203 stripped
 Transform:
@@ -16416,6 +16420,7 @@ MonoBehaviour:
   amplitude: 0.2
   velocity: 3
   tmp: 0
+  delay: 0
   pos: {x: 0, y: 0, z: 0}
 --- !u!1 &1695744677
 GameObject:
@@ -18103,6 +18108,7 @@ MonoBehaviour:
   amplitude: 0.2
   velocity: 3
   tmp: 0
+  delay: 0
   pos: {x: 0, y: 0, z: 0}
 --- !u!1 &1823463222 stripped
 GameObject:
@@ -18139,6 +18145,7 @@ MonoBehaviour:
   amplitude: 0.2
   velocity: 3
   tmp: 0
+  delay: 0
   pos: {x: 0, y: 0, z: 0}
 --- !u!1001 &1828636706
 Prefab:
