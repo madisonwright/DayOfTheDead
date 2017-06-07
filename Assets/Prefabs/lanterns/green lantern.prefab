@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 135358291756666342}
   - component: {fileID: 23367575217894038}
   - component: {fileID: 122105811621677332}
+  - component: {fileID: 114234475095297168}
   m_Layer: 0
   m_Name: green lantern
   m_TagString: Untagged
@@ -82,6 +83,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1757131480846324}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114234475095297168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1757131480846324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 262cf28b7f7d04816849242f2cd6712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.2
+  velocity: 3
+  tmp: 0
+  pos: {x: 0, y: 0, z: 0}
 --- !u!122 &122105811621677332
 Halo:
   m_ObjectHideFlags: 1
