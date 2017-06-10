@@ -12,6 +12,8 @@ public class PlayerMovementController : MonoBehaviour {
     public float max_speed;
     public float min_speed;
     public float reduce;
+    public float turn_speed;
+
     
     private Animator animator;
 
@@ -103,8 +105,8 @@ public class PlayerMovementController : MonoBehaviour {
         if (Physics.Raycast(camRay, out mouseHit, 100.0f, floorMask)) {
             Vector3 playerToMouse = mouseHit.point - transform.position;
             playerToMouse.y = 0f;
-            Quaternion newRotatation = Quaternion.LookRotation(playerToMouse);
-            transform.rotation = newRotatation;
+            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+            transform.rotation = newRotation;
         }
     }
 }
