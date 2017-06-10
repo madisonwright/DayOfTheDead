@@ -22,6 +22,13 @@ public class PlayerHealth : MonoBehaviour
     private Color MaxHealthColor = Color.green;
     private Color MinHealthColor = Color.red;
 
+    //count for health herb
+    public int count1 = 0;
+    public int count2 = 0;
+    public int count3 = 0;
+
+
+
     private Animator animator;
 	PlayerMovementController playerMovement;
 	//PlayerShooting playerShooting;
@@ -106,6 +113,7 @@ public class PlayerHealth : MonoBehaviour
 			source3.Play();
 			currentHealth += 20;
 			other.gameObject.SetActive(false);
+            count1 += 1;
 
             if (!isTutorial) {
                 healthBar.value = currentHealth;
@@ -113,6 +121,33 @@ public class PlayerHealth : MonoBehaviour
             }
 
         }
+        else if (other.gameObject.CompareTag ("Health1")) 
+        {
+            source3.Play();
+            currentHealth += 20;
+            other.gameObject.SetActive(false);
+            count2 += 1;
+
+            if (!isTutorial) {
+                healthBar.value = currentHealth;
+                changeHealthBarColor ();
+            }
+
+        }
+        else if (other.gameObject.CompareTag ("Health2")) 
+        {
+            source3.Play();
+            currentHealth += 20;
+            other.gameObject.SetActive(false);
+            count3 += 1;
+
+            if (!isTutorial) {
+                healthBar.value = currentHealth;
+                changeHealthBarColor ();
+            }
+
+        }
+
 
 	}
     void changeHealthBarColor(){

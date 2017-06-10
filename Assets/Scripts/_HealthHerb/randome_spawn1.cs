@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class randome_spawn : MonoBehaviour {
+public class randome_spawn1 : MonoBehaviour {
 
 	private float x;
 	private float y;
@@ -18,26 +18,30 @@ public class randome_spawn : MonoBehaviour {
 
 
     void humanArea1spawnArea(){
-        areaMaxX = 84;
-        areaMinX = 48;
-        areaMinZ = 40;
-        areaMaxZ = 67;
+        areaMaxX = 153;
+        areaMinX = 123;
+        areaMinZ = 233;
+        areaMaxZ = 328;
     }
     void humanArea1spawnArea2(){
-        areaMinX = 41;
-        areaMaxX = 170;
-        areaMinZ = 87;
-        areaMaxZ = 136;
+        areaMinX = 101;
+        areaMaxX = 147;
+        areaMinZ = 333;
+        areaMaxZ = 367;
     }
     void humanArea1spawnArea3(){
-        areaMinX = 98;
-        areaMaxX = 113;
-        areaMinZ = 149;
-        areaMaxZ = 185;
+        areaMinX = 6;
+        areaMaxX = 25;
+        areaMinZ = 229;
+        areaMaxZ = 379;
     }
 
 	void Start()
 	{
+        GetRandomLocation ();
+	}
+
+    void GetRandomLocation(){
         area = Random.Range (0, 3);
 
         if (area >= 2) {
@@ -49,7 +53,8 @@ public class randome_spawn : MonoBehaviour {
         }
         x = Random.Range(areaMinX, areaMaxX);
         z = Random.Range(areaMinZ, areaMaxZ);
-		pos = new Vector3(x, 1, z);
-		transform.position = pos;
-	}
+        pos = new Vector3(x, 1, z);
+
+        transform.position = pos;
+    }
 }
