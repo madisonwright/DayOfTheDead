@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c44de7cc869254fae8a87d6e09ac28de
-timeCreated: 1497301647
+guid: 28d39f71a01fc42f39398ae99db44c47
+timeCreated: 1497305732
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -32,7 +32,7 @@ ModelImporter:
     4300000: Symmetry_2
     4300002: Cube
     4300004: Extrude
-    7400000: Talk
+    7400000: CINEMA_4D_Main
     9500000: //RootNode
     13700000: Symmetry_2
   materials:
@@ -57,55 +57,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Talk
-      takeName: CINEMA_4D_Main
-      firstFrame: 0
-      lastFrame: 90
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Glasses
-        weight: 1
-      - path: Glasses/Extrude
-        weight: 1
-      - path: Glasses/Symmetry
-        weight: 1
-      - path: Glasses/Symmetry/Cube
-        weight: 1
-      - path: Root
-        weight: 1
-      - path: Root/Joint_3
-        weight: 1
-      - path: Root/Joint_3/Joint_4
-        weight: 1
-      - path: Root/Joint_3/Joint_5
-        weight: 1
-      - path: Symmetry_2
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -125,8 +77,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 0
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
