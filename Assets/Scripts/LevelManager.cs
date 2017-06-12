@@ -22,6 +22,12 @@ public class LevelManager : PersistentSingleton<LevelManager> {
         get; private set;
     }
 
+	public bool IsTutorial {
+		get { 
+			return SceneManager.GetActiveScene ().name.ToLower ().Contains ("tutorial");
+		}
+	}
+
     public void LoadLevel(int number) {
         if(levels.Any(l => l.Number == number)) {
             currentLevel = levels.First(l => l.Number == number);

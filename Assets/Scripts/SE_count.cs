@@ -15,11 +15,9 @@ public class SE_count : MonoBehaviour {
 
     //GameObject player;
     //PlayerHealth playerHealth;
-	bool isTutorial = false;
 
     void Awake(){
-		isTutorial = SceneManager.GetActiveScene ().name.ToLower ().Contains ("tutorial");
-		if (isTutorial) {
+		if (LevelManager.Instance.IsTutorial) {
 			this.enabled = false;
 			return;
 		}
@@ -37,7 +35,7 @@ public class SE_count : MonoBehaviour {
 		if (other.gameObject.CompareTag ("SpiritEnergy")) 
 		{
 			source.Play();
-			if (!isTutorial) {
+			if (!LevelManager.Instance.IsTutorial) {
 				particles.SetActive (true);
 				StartCoroutine (_UpdateSlider ());
 				StartCoroutine (_Hide ());
@@ -45,7 +43,7 @@ public class SE_count : MonoBehaviour {
 
 		}else if (other.gameObject.CompareTag ("Collection")){
 			source.Play();
-			if (!isTutorial) {
+			if (!LevelManager.Instance.IsTutorial) {
 				count2 += 1;
 				collection_energy.text = count2.ToString () + "/" + goal.ToString ();
 				hitParticles = other.GetComponentInChildren <ParticleSystem> ();
