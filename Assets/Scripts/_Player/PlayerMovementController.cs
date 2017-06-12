@@ -29,7 +29,7 @@ public class PlayerMovementController : MonoBehaviour {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         movement.y = 0.0f;
-
+        animator.SetBool("Moving", Math.Abs(moveHorizontal) > 0 || Math.Abs(moveVertical) > 0);
         if (Math.Abs(moveHorizontal) > 0 & Math.Abs(moveVertical) > 0){
             if (moveHorizontal >0.0f){
                 movement.x = speed/reduce;
