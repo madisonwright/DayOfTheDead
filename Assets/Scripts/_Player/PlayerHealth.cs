@@ -98,6 +98,7 @@ public class PlayerHealth : MonoBehaviour
 		source2.Play ();
 
 		playerMovement.enabled = false;
+		this.enabled = false;
 		//playerShooting.enabled = false;
 	}
 
