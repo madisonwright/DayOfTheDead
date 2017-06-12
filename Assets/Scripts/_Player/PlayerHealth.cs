@@ -35,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
 	bool isDead;
     //bool damaged;
     public bool isTutorial = false;
+    public GameObject deathMenu;
 	void Awake ()
 	{
         animator = GetComponent<Animator>();
@@ -99,8 +100,11 @@ public class PlayerHealth : MonoBehaviour
 
 		playerMovement.enabled = false;
 		this.enabled = false;
-		//playerShooting.enabled = false;
-	}
+        //playerShooting.enabled = false;
+        if(!LevelManager.Instance.IsTutorial) {
+            deathMenu.SetActive(true);
+        }
+    }
 
 
 	public void RestartLevel ()
