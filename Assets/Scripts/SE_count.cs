@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SE_count : MonoBehaviour {
 	public int count2 = 0;
@@ -14,8 +15,14 @@ public class SE_count : MonoBehaviour {
 
     //GameObject player;
     //PlayerHealth playerHealth;
+	bool isTutorial = false;
 
     void Awake(){
+		isTutorial = SceneManager.GetActiveScene ().name.ToLower ().Contains ("tutorial");
+		if (isTutorial) {
+			this.enabled = false;
+			return;
+		}
     	collection_energy.text = "0/?";
         //player = GameObject.FindGameObjectWithTag ("Player");
         //playerHealth = player.GetComponent<PlayerHealth>();
@@ -30,17 +37,21 @@ public class SE_count : MonoBehaviour {
 		if (other.gameObject.CompareTag ("SpiritEnergy")) 
 		{
 			source.Play();
-            particles.SetActive (true);
-            StartCoroutine (_UpdateSlider ());
-            StartCoroutine (_Hide ());
+			if (!isTutorial) {
+				particles.SetActive (true);
+				StartCoroutine (_UpdateSlider ());
+				StartCoroutine (_Hide ());
+			}
 
 		}else if (other.gameObject.CompareTag ("Collection")){
 			source.Play();
-			count2 += 1;
-			collection_energy.text = count2.ToString() + "/" + goal.ToString();
-	    	hitParticles = other.GetComponentInChildren <ParticleSystem> ();
-			hitParticles.Play();
-			StartCoroutine(_reward(other.gameObject));
+			if (!isTutorial) {
+				count2 += 1;
+				collection_energy.text = count2.ToString () + "/" + goal.ToString ();
+				hitParticles = other.GetComponentInChildren <ParticleSystem> ();
+				hitParticles.Play ();
+				StartCoroutine (_reward (other.gameObject));
+			}
 		}
 	}
 
