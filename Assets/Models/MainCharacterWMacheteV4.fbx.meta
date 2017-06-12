@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 825b2eec88a3c4915bc46be1726b0629
-timeCreated: 1497304571
+guid: d5f71b01166c1499a89a336208988add
+timeCreated: 1497306579
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -25,10 +25,11 @@ ModelImporter:
     100034: Joint_7
     100036: LeftFootController
     100038: //RootNode
-    100040: Null_1
-    100042: Null_2
-    100044: RightFootGoal
-    100046: Root
+    100040: Null
+    100042: Null_1_2
+    100044: Null_2
+    100046: RightFootGoal
+    100048: Root
     400000: Character_1
     400002: Joint
     400004: Joint_1
@@ -49,18 +50,16 @@ ModelImporter:
     400034: Joint_7
     400036: LeftFootController
     400038: //RootNode
-    400040: Null_1
-    400042: Null_2
-    400044: RightFootGoal
-    400046: Root
-    2300000: Null_1
-    3300000: Null_1
-    4300000: Null_1
+    400040: Null
+    400042: Null_1_2
+    400044: Null_2
+    400046: RightFootGoal
+    400048: Root
+    2300000: Null_1_2
+    3300000: Null_1_2
+    4300000: Null_1_2
     4300002: Character_1
-    7400000: Walk
-    7400002: Attack
-    7400004: Death
-    7400006: Idle
+    7400000: CINEMA_4D_Main
     9500000: //RootNode
     13700000: Character_1
   materials:
@@ -85,311 +84,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Walk
-      takeName: CINEMA_4D_Main
-      firstFrame: 0
-      lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Character_1
-        weight: 1
-      - path: Null_2
-        weight: 1
-      - path: Null_2/Null_1
-        weight: 1
-      - path: Root
-        weight: 1
-      - path: Root/Joint
-        weight: 1
-      - path: Root/Joint/Joint_1
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6/Joint_7
-        weight: 1
-      - path: Root/Joint/Joint_1_2
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3/Joint_4_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2/Joint_4_2
-        weight: 1
-      - path: Root/Joint/LeftFootController
-        weight: 1
-      - path: Root/Joint/RightFootGoal
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Attack
-      takeName: CINEMA_4D_Main
-      firstFrame: 41
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Character_1
-        weight: 1
-      - path: Null_2
-        weight: 1
-      - path: Null_2/Null_1
-        weight: 1
-      - path: Root
-        weight: 1
-      - path: Root/Joint
-        weight: 1
-      - path: Root/Joint/Joint_1
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6/Joint_7
-        weight: 1
-      - path: Root/Joint/Joint_1_2
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3/Joint_4_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2/Joint_4_2
-        weight: 1
-      - path: Root/Joint/LeftFootController
-        weight: 1
-      - path: Root/Joint/RightFootGoal
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Death
-      takeName: CINEMA_4D_Main
-      firstFrame: 61
-      lastFrame: 74
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Character_1
-        weight: 1
-      - path: Null_2
-        weight: 1
-      - path: Null_2/Null_1
-        weight: 1
-      - path: Root
-        weight: 1
-      - path: Root/Joint
-        weight: 1
-      - path: Root/Joint/Joint_1
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6/Joint_7
-        weight: 1
-      - path: Root/Joint/Joint_1_2
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3/Joint_4_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2/Joint_4_2
-        weight: 1
-      - path: Root/Joint/LeftFootController
-        weight: 1
-      - path: Root/Joint/RightFootGoal
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Idle
-      takeName: CINEMA_4D_Main
-      firstFrame: 77
-      lastFrame: 100
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Character_1
-        weight: 1
-      - path: Null_2
-        weight: 1
-      - path: Null_2/Null_1
-        weight: 1
-      - path: Root
-        weight: 1
-      - path: Root/Joint
-        weight: 1
-      - path: Root/Joint/Joint_1
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_5_2
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6
-        weight: 1
-      - path: Root/Joint/Joint_1/Joint_2/Joint_3/Joint_4/Joint_6/Joint_7
-        weight: 1
-      - path: Root/Joint/Joint_1_2
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3
-        weight: 1
-      - path: Root/Joint/Joint_1_2/Joint_2_4/Joint_3_3/Joint_4_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2
-        weight: 1
-      - path: Root/Joint/Joint_2_2/Joint_2_3/Joint_3_2/Joint_4_2
-        weight: 1
-      - path: Root/Joint/LeftFootController
-        weight: 1
-      - path: Root/Joint/RightFootGoal
-        weight: 1
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
