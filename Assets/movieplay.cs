@@ -7,11 +7,9 @@
      
     MovieTexture mt;
     RectTransform rt;
-    Vector2 origPos;
     public bool loop;
     void Awake(){
         rt = GetComponent<RectTransform>();
-        origPos = rt.anchoredPosition;
          
          
         RawImage rim = GetComponent<RawImage>();
