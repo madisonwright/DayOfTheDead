@@ -23,10 +23,11 @@ public class EnemyManager : PersistentSingleton<EnemyManager> {
             }
         }
 
-        if (LevelManager.Instance.currentWorld == WorldType.Spirt) {
-            EnemyHealth[] ene = Resources.FindObjectsOfTypeAll<EnemyHealth>();
-            StarEnemyHealth[] starH = Resources.FindObjectsOfTypeAll<StarEnemyHealth>();
+        EnemyHealth[] ene = Resources.FindObjectsOfTypeAll<EnemyHealth>();
+        StarEnemyHealth[] starH = Resources.FindObjectsOfTypeAll<StarEnemyHealth>();
 
+        if (LevelManager.Instance.currentWorld == WorldType.Spirt) {
+           
             for (int i = 0; i < ene.Length; i++) {
 
                 /*
@@ -34,25 +35,47 @@ public class EnemyManager : PersistentSingleton<EnemyManager> {
                  * So we check the name contains Clone or not
                 */
                 if (ene [i].gameObject.name.Contains ("Clone")) {
-                    ene[i].gameObject.SetActive (true);
+                    if (ene [i].gameObject.activeSelf) {
+                        ene [i].gameObject.SetActive (false);
+                    } else{
+                        ene [i].gameObject.SetActive (true);
+                    }
                 }
             }
 
             for (int j = 0; j < starH.Length; j++) {
                 if (starH[j].gameObject.name.Contains ("Clone")) {
-                    starH[j].gameObject.SetActive (true);
+                    if (starH [j].gameObject.activeSelf) {
+                        starH [j].gameObject.SetActive (false);
+                    } else {
+                        starH[j].gameObject.SetActive (true);
+                           
+                    }
                 }
             }
         } 
         else {
             //Debug.Log("EnemyManager: disableEnemy");
-            GameObject[] enemies = GameObject.FindGameObjectsWithTag ("Enemy");
-            GameObject[] starEne = GameObject.FindGameObjectsWithTag ("StarEnemy");
-            for (int i = 0; i < enemies.Length; i++) {
-                enemies [i].SetActive (false);
+
+            for (int l = 0; l < ene.Length; l++) {
+                if (ene [l].gameObject.name.Contains ("Clone")) {
+                    if (ene [l].gameObject.activeSelf) {
+                        ene [l].gameObject.SetActive (false);
+                    } else {
+                        ene [l].gameObject.SetActive (true);
+                    }
+                }
+
             }
-            for (int k = 0; k < starEne.Length; k++) {
-                starEne [k].SetActive (false);
+            for (int k = 0; k < starH.Length; k++) {
+                if (starH [k].gameObject.name.Contains ("Clone")) {
+                    if (starH [k].gameObject.activeSelf) {
+                        starH [k].gameObject.SetActive (false);
+                    } else {
+                        starH [k].gameObject.SetActive (true);
+                    }
+                }
+
             }
         }
     }
