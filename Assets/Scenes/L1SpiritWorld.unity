@@ -152,6 +152,16 @@ Prefab:
       propertyPath: m_Name
       value: orange lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
   m_IsPrefabParent: 0
@@ -197,6 +207,21 @@ Prefab:
     - target: {fileID: 1429177018989592, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
       propertyPath: m_Name
       value: white lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: delay
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
@@ -248,6 +273,21 @@ Prefab:
     - target: {fileID: 1757131480846324, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
       propertyPath: m_Name
       value: green lantern (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: delay
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
@@ -353,6 +393,16 @@ Prefab:
       propertyPath: m_Name
       value: green lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -399,6 +449,16 @@ Prefab:
     - target: {fileID: 4924072758772802, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
@@ -745,6 +805,16 @@ Prefab:
     - target: {fileID: 1382349785533844, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_Name
       value: pink lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -1202,8 +1272,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 188032937}
+  isTutorial: 0
 --- !u!54 &188032939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1389,6 +1461,21 @@ Prefab:
     - target: {fileID: 4439474584882048, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
       propertyPath: m_RootOrder
       value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: delay
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
@@ -1657,6 +1744,16 @@ Prefab:
       propertyPath: m_Name
       value: blue lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -1822,6 +1919,16 @@ Prefab:
       propertyPath: m_Name
       value: green lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -1867,6 +1974,21 @@ Prefab:
     - target: {fileID: 1122692717973462, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
       propertyPath: m_Name
       value: blue lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: delay
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
@@ -1975,8 +2097,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 288045454}
+  isTutorial: 0
 --- !u!54 &288045456
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2046,6 +2170,16 @@ Prefab:
     - target: {fileID: 1339767946718358, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
       propertyPath: m_Name
       value: red lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
@@ -2227,6 +2361,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -2362,6 +2506,16 @@ Prefab:
       propertyPath: m_Name
       value: red lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -2412,6 +2566,16 @@ Prefab:
     - target: {fileID: 1757131480846324, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
       propertyPath: m_Name
       value: green lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
@@ -2491,8 +2655,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 337814843}
+  isTutorial: 0
 --- !u!1 &345507739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,6 +3246,16 @@ Prefab:
       propertyPath: m_Name
       value: blue lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -3342,6 +3518,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -3392,6 +3578,16 @@ Prefab:
     - target: {fileID: 1122692717973462, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
       propertyPath: m_Name
       value: blue lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
@@ -3471,8 +3667,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 445655211}
+  isTutorial: 0
 --- !u!1001 &460788781
 Prefab:
   m_ObjectHideFlags: 0
@@ -3515,6 +3713,16 @@ Prefab:
     - target: {fileID: 1429177018989592, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
       propertyPath: m_Name
       value: white lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
@@ -3567,6 +3775,21 @@ Prefab:
       propertyPath: m_Name
       value: white lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
   m_IsPrefabParent: 0
@@ -3617,6 +3840,21 @@ Prefab:
     - target: {fileID: 1339767946718358, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
       propertyPath: m_Name
       value: red lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: delay
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
@@ -3669,6 +3907,16 @@ Prefab:
       propertyPath: m_Name
       value: red lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -3719,6 +3967,16 @@ Prefab:
     - target: {fileID: 1382349785533844, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_Name
       value: pink lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -3930,6 +4188,16 @@ Prefab:
       propertyPath: m_Name
       value: red lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -4068,6 +4336,16 @@ Prefab:
       propertyPath: m_Name
       value: blue lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -4119,6 +4397,16 @@ Prefab:
       propertyPath: m_Name
       value: green lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -4164,6 +4452,16 @@ Prefab:
     - target: {fileID: 1757131480846324, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
       propertyPath: m_Name
       value: green lantern (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
@@ -4267,6 +4565,16 @@ Prefab:
     - target: {fileID: 4265605475975462, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
@@ -4640,6 +4948,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: delay
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -4877,6 +5200,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -5092,8 +5425,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 831675951}
+  isTutorial: 0
 --- !u!54 &831675953
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5163,6 +5498,16 @@ Prefab:
     - target: {fileID: 1122692717973462, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
       propertyPath: m_Name
       value: blue lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
@@ -5291,6 +5636,21 @@ Prefab:
     - target: {fileID: 1339767946718358, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
       propertyPath: m_Name
       value: red lantern (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: delay
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
@@ -5424,6 +5784,21 @@ Prefab:
     - target: {fileID: 1122692717973462, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
       propertyPath: m_Name
       value: blue lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: delay
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
@@ -5947,6 +6322,21 @@ Prefab:
       propertyPath: m_Name
       value: orange lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: delay
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
   m_IsPrefabParent: 0
@@ -5993,6 +6383,16 @@ Prefab:
     - target: {fileID: 4977007666231650, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_RootOrder
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -6097,6 +6497,16 @@ Prefab:
       propertyPath: m_Name
       value: red lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -6142,6 +6552,16 @@ Prefab:
     - target: {fileID: 1429177018989592, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
       propertyPath: m_Name
       value: white lantern (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
@@ -6704,6 +7124,21 @@ Prefab:
       propertyPath: m_Name
       value: orange lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: delay
+      value: 1.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
   m_IsPrefabParent: 0
@@ -6918,6 +7353,16 @@ Prefab:
       propertyPath: m_Name
       value: blue lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -7051,6 +7496,21 @@ Prefab:
       propertyPath: m_Name
       value: pink lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: delay
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
   m_IsPrefabParent: 0
@@ -7106,6 +7566,16 @@ Prefab:
     - target: {fileID: 1350613625411354, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
       propertyPath: m_Name
       value: orange lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
@@ -7318,6 +7788,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
   m_IsPrefabParent: 0
@@ -7374,6 +7854,16 @@ Prefab:
     - target: {fileID: 4819249570943380, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
@@ -7918,6 +8408,16 @@ Prefab:
       propertyPath: m_Name
       value: red lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -8133,6 +8633,16 @@ Prefab:
       propertyPath: m_Name
       value: blue lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -8215,6 +8725,16 @@ Prefab:
     - target: {fileID: 1350613625411354, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
       propertyPath: m_Name
       value: orange lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
@@ -8349,6 +8869,16 @@ Prefab:
       propertyPath: m_Name
       value: orange lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
   m_IsPrefabParent: 0
@@ -8394,6 +8924,16 @@ Prefab:
     - target: {fileID: 1382349785533844, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_Name
       value: pink lantern (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -8528,6 +9068,16 @@ Prefab:
       propertyPath: m_Name
       value: green lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -8573,6 +9123,16 @@ Prefab:
     - target: {fileID: 1350613625411354, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
       propertyPath: m_Name
       value: orange lantern (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
@@ -8943,8 +9503,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 1380840315}
+  isTutorial: 0
 --- !u!4 &1388739520 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4601392891940066, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
@@ -9638,6 +10200,21 @@ Prefab:
       propertyPath: m_Name
       value: green lantern (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -9689,8 +10266,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 1503178871}
+  isTutorial: 0
 --- !u!54 &1503178873
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10508,6 +11087,16 @@ Prefab:
       propertyPath: m_Name
       value: blue lantern (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -10586,8 +11175,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 1581093811}
+  isTutorial: 0
 --- !u!1 &1585033525
 GameObject:
   m_ObjectHideFlags: 0
@@ -10712,6 +11303,16 @@ Prefab:
     - target: {fileID: 1382349785533844, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_Name
       value: pink lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -10930,6 +11531,16 @@ Prefab:
       propertyPath: m_Name
       value: orange lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
   m_IsPrefabParent: 0
@@ -10976,6 +11587,21 @@ Prefab:
     - target: {fileID: 4265605475975462, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: delay
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
@@ -11340,7 +11966,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1653953394
 AudioListener:
   m_ObjectHideFlags: 0
@@ -11405,7 +12031,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1653953393}
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 100, y: 15, z: 60}
+  m_LocalPosition: {x: 89.2, y: 15, z: 34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11838,6 +12464,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -11884,6 +12520,16 @@ Prefab:
     - target: {fileID: 4977007666231650, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -12187,6 +12833,21 @@ Prefab:
       propertyPath: m_Name
       value: orange lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: delay
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
   m_IsPrefabParent: 0
@@ -12325,6 +12986,16 @@ Prefab:
       propertyPath: m_Name
       value: white lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
   m_IsPrefabParent: 0
@@ -12454,6 +13125,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365416033662482, guid: e13e483563b846e4a9d70d2ed97005fe,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e13e483563b846e4a9d70d2ed97005fe, type: 2}
   m_IsPrefabParent: 0
@@ -12477,7 +13158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1803419954
 Light:
   m_ObjectHideFlags: 0
@@ -12569,6 +13250,21 @@ Prefab:
     - target: {fileID: 1382349785533844, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_Name
       value: pink lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: delay
+      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -12703,6 +13399,16 @@ Prefab:
       propertyPath: m_Name
       value: green lantern (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234475095297168, guid: dd0d1aa967e75fa44896fb61c02566aa,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd0d1aa967e75fa44896fb61c02566aa, type: 2}
   m_IsPrefabParent: 0
@@ -12836,6 +13542,21 @@ Prefab:
       propertyPath: m_Name
       value: blue lantern (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: delay
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -12887,8 +13608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1943691311931752, guid: 8676269081f4440ee9404e4b38a3d9e5, type: 2}
+  star: {fileID: 0}
   spawnPoints:
   - {fileID: 1837874622}
+  isTutorial: 0
 --- !u!54 &1837874624
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12959,6 +13682,16 @@ Prefab:
       propertyPath: m_Name
       value: pink lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
   m_IsPrefabParent: 0
@@ -13004,6 +13737,16 @@ Prefab:
     - target: {fileID: 1429177018989592, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
       propertyPath: m_Name
       value: white lantern (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
@@ -13272,6 +14015,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114119451816397616, guid: b3cb0ea9ffc6d754294bfb033d8d4e93,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3cb0ea9ffc6d754294bfb033d8d4e93, type: 2}
   m_IsPrefabParent: 0
@@ -13323,6 +14076,16 @@ Prefab:
       propertyPath: m_Name
       value: red lantern (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
   m_IsPrefabParent: 0
@@ -13373,6 +14136,16 @@ Prefab:
     - target: {fileID: 1382349785533844, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_Name
       value: pink lantern (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -13503,6 +14276,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
   m_IsPrefabParent: 0
@@ -13544,6 +14327,16 @@ Prefab:
     - target: {fileID: 4601392891940066, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
       propertyPath: m_RootOrder
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114092655165557046, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07e9db08f2e8f0e4fa5cdf86f5ac11b3, type: 2}
@@ -13638,6 +14431,16 @@ Prefab:
     - target: {fileID: 1382349785533844, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
       propertyPath: m_Name
       value: pink lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114771716764662826, guid: 09b8254435d67f749b21ced25c0d709e,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b8254435d67f749b21ced25c0d709e, type: 2}
@@ -13827,6 +14630,16 @@ Prefab:
     - target: {fileID: 1429177018989592, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}
       propertyPath: m_Name
       value: white lantern (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: amplitude
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 114525655747964792, guid: 403bf7a344061f4478f7e7fa53c33854,
+        type: 2}
+      propertyPath: velocity
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 403bf7a344061f4478f7e7fa53c33854, type: 2}

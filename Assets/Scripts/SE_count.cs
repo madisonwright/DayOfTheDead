@@ -6,16 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class SE_count : MonoBehaviour {
     public int count2 = 0;
+    private int count3 = 0;
     public Slider spirit_energy;
     public Text collection_energy;
     public AudioSource source;
     public GameObject particles;
+    public Image end_text1;
+    public Image end_text2;
     ParticleSystem hitParticles;
-    private int goal = 4;
+    private int goal = 0;
+    public GameObject playerr;
+
 
     public GameObject winMenu;
-    //GameObject player;
-    //PlayerHealth playerHealth;
+
 
     void Awake() {
         if (LevelManager.Instance.IsTutorial) {
@@ -45,15 +49,41 @@ public class SE_count : MonoBehaviour {
             source.Play();
             if (!LevelManager.Instance.IsTutorial) {
                 count2 += 1;
-                collection_energy.text = count2.ToString() + "/" + goal.ToString();
+                count3 += 1;
+                if (0 <= count2  & count2 <= 3){
+                    goal = 4;
+                } else if (4 <= count2 & count2 < 7){
+                    goal = 3;
+                    if (count3 == 4){
+                        count3 -= 4;}
+                } else{
+                    if (count3 == 3){
+                        count3 -= 3;
+                    }
+                }
+                collection_energy.text = count3.ToString() + "/" + goal.ToString();
                 hitParticles = other.GetComponentInChildren<ParticleSystem>();
                 hitParticles.Play();
                 StartCoroutine(_reward(other.gameObject));
             }
         }
-        if (count2 == 9) {
+        if (count2 == 10) {
+            StartCoroutine(_end_text());
             StartCoroutine(_WinCondition());
         }
+    }
+
+    private IEnumerator _end_text() {
+        playerr.GetComponent<SE_count>().end_text1.gameObject.SetActive(true);
+        yield return new WaitForSeconds(4.0f);
+        playerr.GetComponent<SE_count>().end_text1.gameObject.SetActive(false);
+        StartCoroutine(_end_text2());
+    }
+
+    private IEnumerator _end_text2() {
+        playerr.GetComponent<SE_count>().end_text2.gameObject.SetActive(true);
+        yield return new WaitForSeconds(6.0f);
+        playerr.GetComponent<SE_count>().end_text2.gameObject.SetActive(false);
     }
 
     private IEnumerator _Hide() {
@@ -72,8 +102,8 @@ public class SE_count : MonoBehaviour {
     }
 
     private IEnumerator _WinCondition() {
-        winMenu.SetActive(true);
-        yield return new WaitForSeconds(3.0f);
+        //winMenu.SetActive(true);
+        yield return new WaitForSeconds(10.0f);
         SceneManager.LoadScene("Credits");
     }
 

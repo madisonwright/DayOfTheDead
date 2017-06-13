@@ -358,9 +358,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: A big thank you to Dr. Sari Pascoe and the codac department for their help
-    with keeping our project respectful to the cultures that celebrate Dia de Los
-    Muertos.
+  m_Text: "A big thank you to Dr. Sari Pascoe \nand the Center on Diversity and Community
+    \ for their help with keeping our project respectful to the cultures that celebrate
+    Dia de Los Muertos."
 --- !u!222 &303236311
 CanvasRenderer:
   m_ObjectHideFlags: 0
