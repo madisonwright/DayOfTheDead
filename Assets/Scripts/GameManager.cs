@@ -14,6 +14,7 @@ public class GameManager : PersistentSingleton<GameManager> {
 		if (Input.GetKeyDown(KeyCode.Space) && LevelManager.Instance.IsTutorial) {
 			LevelManager.Instance.LoadLevel (1);
 		} else if(Input.GetKeyDown(KeyCode.Space) &&  SpiritEnergyManager.Instance.Energy >= 50.0f) {
+            
             SpiritEnergyManager.Instance.Energy -= 50.0f;
             WorldSwitchEffect.Instance.TriggerEffect();
             EventMessenger.TriggerEvent(Events.WORLD_SWITCH_STARTED);
